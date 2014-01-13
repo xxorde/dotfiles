@@ -1,4 +1,6 @@
 #!/bin/bash
+HOME=/home/$(whoami)
+CONFIGS=$(pwd)/files
 echo "dotfile installer"
 echo "alexander@xxor.de"
 echo "========================="
@@ -7,9 +9,6 @@ echo "home:    $HOME"
 echo "configs: $CONFIGS"
 echo "========================="
 echo ""
-
-HOME=/home/$(whoami)
-CONFIGS=$(pwd)/files
 
 ls -a $CONFIGS |
 while read i; do
